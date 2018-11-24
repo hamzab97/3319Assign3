@@ -7,9 +7,9 @@
     }
     while ($row = mysqli_fetch_assoc($result)) {
 //        echo "<a class="list-group-item list-group-item-action" data-toggle="list">";
-//        echo $row["FirstName"] . "</a>";
-        var_dump($row);
-        echo $row;
+        echo $row["FirstName"];
+//        var_dump($row);
+//        echo $row;
     }
     mysqli_free_result($result);
 ?>

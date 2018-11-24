@@ -1,6 +1,6 @@
+<?php
 //connect to database file
 //code from owl week 7 tutorial videos
-<?php
     $dbhost = "localhost";
     $dbuser= "root";
     $dbpass = "0000";
