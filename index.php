@@ -11,7 +11,7 @@
 <body>
     <!--include php script to connect to database-->
     <?php
-        include 'connectdbb.php';
+        include 'connectdb.php';
     ?>
     <div class="container-fluid">
         <div class="page-header">
