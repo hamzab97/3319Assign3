@@ -20,17 +20,13 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <h5>Users</h5>
-                <form action="getProduct.php" method="post">
-                <?php
-                    include 'getUserData.php';
-                 ?>
-                 <input type="submit" value="Get Products">
-                </form>
-            </div>
-        </div>
+        <h5>Users</h5>
+        <form action="getProduct.php" method="post">
+        <?php
+            include 'getUserData.php';
+         ?>
+         <input type="submit" value="Get Products">
+        </form>
     </div>
 
     <div class="container">
