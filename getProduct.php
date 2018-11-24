@@ -5,7 +5,7 @@
     <title>Products</title>
 </head>
 <body>
-
+    <h1>Products purchased by customer $_POST["customername"]</h1>
     <?php
         $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
 //        echo '<h1>hello';
