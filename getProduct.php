@@ -10,7 +10,7 @@
         echo "<h1>Products purchased by customer ";
         echo $_POST["customername"];
         echo "</h1>";
-        $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
+        global $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
 //        echo '<h1>hello';
 //        echo $whichCustomer;
 //        echo '</h1>';
