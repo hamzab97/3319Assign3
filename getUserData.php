@@ -5,13 +5,13 @@
     if (!$result) {
          die("databases query failed.");
     }
-    echo '<div class="list-group" id="myList" role="tablist">'
+    echo '<div class="list-group" id="myList" role="tablist">';
     while ($row = mysqli_fetch_assoc($result)) {
             echo '<input type="radio" name="customername" value="$row["CustomerID"]">';
             echo $row["FirstName"]. " " .$row["LastName"];
     //        var_dump($row);
     //        echo $row;
-        }
-    echo '</div>'
+    }
+    echo '</div>';
     mysqli_free_result($result);
 ?>
