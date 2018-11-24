@@ -6,7 +6,7 @@
          die("databases query failed.");
     }
     while ($row = mysqli_fetch_assoc($result)) {
-        echo '<a class="list-group-item list-group-item-action" data-toggle="list" role="tab" href="#$row[FirstName]" value="$row["CustomerID"]">';
+        echo '<a class="list-group-item list-group-item-action" data-toggle="list" role="tab" href="#$row[FirstName]" value="$row["CustomerID"]" name="customers">';
         echo $row["FirstName"]. ' ' .$row["LastName"];
         echo '</a>';
 //        var_dump($row);
