@@ -10,11 +10,11 @@
         echo "<h1>Products purchased by customer ";
         echo $_POST["customername"];
         echo "</h1>";
-        global $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
+        $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
 //        echo '<h1>hello';
 //        echo $whichCustomer;
 //        echo '</h1>';
-        $query = "SELECT Product.Description FROM Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID AND BoughtBy.CustomerID = whichCustomer"; //get product data and order it by the product description
+        $query = 'SELECT Product.Description FROM Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID AND BoughtBy.CustomerID ='. $whichCustomer; //get product data and order it by the product description
         $result = mysqli_query($connection,$query);
         if (!$result) {
             die("databases query failed.");
