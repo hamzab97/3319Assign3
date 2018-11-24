@@ -24,9 +24,10 @@
             <div class="col-sm">
                 <h5>Users</h5>
                 <div class="list-group" id="myList" role="tablist">
-                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#home" role="tab"><?php
-                                                                                                                                         include 'getUserData.php';
-                                                                                                                                     ?></a>
+                    <?php
+                        include 'getUserData.php';
+                    ?>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#home" role="tab">Home</a>
                     <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
                     <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
                     <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
