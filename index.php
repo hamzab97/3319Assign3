@@ -34,7 +34,7 @@
                 <div class="tab-content">
                     <h5>Details</h5>
                     <div class="tab-pane" id="Sideshow" role="tabpanel">Sideshow</div>
-                    <div class="tab-pane" id="profile" role="tabpanel">profile</div>
+                    <div class="tab-pane" id="Monty" role="tabpanel">profile</div>
                     <div class="tab-pane" id="messages" role="tabpanel">...</div>
                     <div class="tab-pane" id="settings" role="tabpanel">...</div>
                 </div>
