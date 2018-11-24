@@ -23,20 +23,12 @@
         <div class="row">
             <div class="col-sm">
                 <h5>Users</h5>
-                <div class="list-group" id="myList" role="tablist">
-                    <?php
-                        include 'getUserData.php';
-                    ?>
-                </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="tab-content">
-                    <h5>Details</h5>
-                    <?php
-                        include 'getProduct.php';
-                    ?>
-                </div>
+                <form action="getProduct.php" method="post">
+                <?php
+                    include 'getUserData.php';
+                 ?>
+                 <input type="submit" value="get product description">
+                </form>
             </div>
         </div>
     </div>
