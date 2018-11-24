@@ -7,7 +7,7 @@
 <body>
 
     <?php
-        $whichCustomer = $_POST["customers"];
+        $whichCustomer = $_POST["customername"];
         echo '<h1>hello';
         echo $whichCustomer;
         echo '</h1>';
