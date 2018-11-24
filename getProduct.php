@@ -7,7 +7,9 @@
 <body>
 
     <?php
-    <h1>Products purchased by customer $_POST["customername"]</h1>
+        echo'<h1>Products purchased by customer';
+        echo $_POST["customername"];
+        echo '</h1>';
         $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
 //        echo '<h1>hello';
 //        echo $whichCustomer;
