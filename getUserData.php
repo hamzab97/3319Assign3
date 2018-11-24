@@ -7,8 +7,9 @@
     }
     echo '<div class="list-group" id="myList" role="tablist">';
     while ($row = mysqli_fetch_assoc($result)) {
-            echo '<input type="radio" name="customername" value="$row["CustomerID"]">';
-            echo $row["FirstName"]. " " .$row["LastName"];
+            echo '<input type="radio" name="customername" value="';
+            echo $row["CustomerID"];
+            echo '">'. $row["FirstName"]. " " .$row["LastName"];
     //        var_dump($row);
     //        echo $row;
     }
