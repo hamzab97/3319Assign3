@@ -5,9 +5,9 @@
         die("databases query failed.");
     }
     while ($row = mysqli_fetch_assoc($result)) {
-         echo "<div class=tab-pane id=$row[FirstName] role=tabpanel>";
+         echo '<div class="tab-pane" id="$row[FirstName]" role="tabpanel">';
          echo $row;
-         echo "</div>";
+         echo '</div>';
     }
     mysqli_free_result($result);
 ?>
