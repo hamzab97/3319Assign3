@@ -11,15 +11,15 @@
 //        echo '<h1>hello';
 //        echo $whichCustomer;
 //        echo '</h1>';
-        $query = "SELECT Product.Description FROM Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID AND whichCustomer = BoughtBy.CustomerID"; //get product data and order it by the product description
+        $query = "SELECT Product.Description FROM Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID AND BoughtBy.CustomerID = whichCustomer"; //get product data and order it by the product description
         $result = mysqli_query($connection,$query);
         if (!$result) {
             die("databases query failed.");
         }
         while ($row = mysqli_fetch_assoc($result)) {
-             echo '<div class="tab-pane" id="$row["Customer.FirstName"]" role="tabpanel">';
+             echo '<p>';
              echo $row;
-             echo '</div>';
+             echo '</p>';
         }
         mysqli_free_result($result);
     ?>
