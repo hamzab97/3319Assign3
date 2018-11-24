@@ -8,7 +8,7 @@
 
     <?php
         $whichCustomer = $_POST["customers"];
-        echo '<h1>';
+        echo '<h1>hello';
         echo $whichCustomer;
         echo '</h1>';
 //        $query = "SELECT Product.Description, Customer.FirstName FROM Product, BoughtBy, Customer"; //get product data and order it by the product description
