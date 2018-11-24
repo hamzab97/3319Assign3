@@ -36,10 +36,7 @@
                     <?php
                         include 'getProduct.php';
                     ?>
-                    <div class="tab-pane" id="Sideshow" role="tabpanel">Sideshow</div>
-                    <div class="tab-pane" id="Monty" role="tabpanel">profile</div>
-                    <div class="tab-pane" id="messages" role="tabpanel">...</div>
-                    <div class="tab-pane" id="settings" role="tabpanel">...</div>
+                    <div class="tab-pane" id=$row["FirstName"] role="tabpanel">$row["FirstName"]</div>
                 </div>
             </div>
         </div>
