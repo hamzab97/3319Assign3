@@ -1,5 +1,6 @@
 <?php
     $whichCustomer = $_POST["customers"];
+    echo $whichCustomer;
     $query = "SELECT Product.Description, Customer.FirstName FROM Product, BoughtBy, Customer"; //get product data and order it by the product description
     $result = mysqli_query($connection,$query);
     if (!$result) {
