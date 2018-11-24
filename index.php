@@ -36,7 +36,6 @@
                     <?php
                         include 'getProduct.php';
                     ?>
-                    <div class="tab-pane" id=$row["FirstName"] role="tabpanel">$row["FirstName"]</div>
                 </div>
             </div>
         </div>
