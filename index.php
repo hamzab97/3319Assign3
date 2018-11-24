@@ -27,7 +27,7 @@
                 <?php
                     include 'getUserData.php';
                  ?>
-                 <input type="submit" value="get product description">
+                 <input type="submit" value="Get Products">
                 </form>
             </div>
         </div>
