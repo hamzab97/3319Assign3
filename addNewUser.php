@@ -27,7 +27,7 @@
                 //customer already exists in the db
                 echo '<h1>Customer '. $customerID. ' '. $firstName. ' '. $lastName. ' already exists in the database</h1>';
             }
-            $result = mysqli_query($connection, $checkAgentExists);
+//            $result = mysqli_query($connection, $checkAgentExists);
 //            se
             else{
                 $query = "INSERT INTO Customer VALUES ('$customerID', '$firstName', '$lastName', '$city', '$phoneNumber', '$agentID')";
