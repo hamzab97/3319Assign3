@@ -25,7 +25,7 @@
         }
         while ($row = mysqli_fetch_assoc($result)) {
              echo '<p> hello ';
-             echo $row;
+             echo $row["Product.Description"];
              echo '</p>';
         }
         mysqli_free_result($result);
