@@ -31,10 +31,10 @@
             //check if agent exists
             if (!$result = mysqli_query($connection, $checkAgentExists)){
                             //customer already exists in the db
-                            echo '<h1>agent doesnt exist</h1>';
+                echo '<h1>agent doesnt exist</h1>';
             }
             else{
-                $query = 'INSERT INTO Customer VALUES ('$customerID', '$firstName', '$lastName', '$city', '$phoneNumber', '$agentID')';
+                $query = 'INSERT INTO Customer VALUES ("'.$customerID.'", "'. $firstName.'", "'.$lastName.'", "'.$city.'", "'.$phoneNumber.'", "'.$agentID.'")';
                 $result = mysqli_query($connection,$query);
                 if (!$result) {
                     die("databases query failed.");
