@@ -28,11 +28,11 @@
                 //customer already exists in the db
                 if(mysqli_num_rows($result)>0){
 
-                    echo “Username exist”;
+                    echo "<h1>customer exists ";
 
                 }else{
 
-                    echo “Doesn’t exist”;
+                    echo "<h1>customer doesnt exist ";
 
                 }
             }
