@@ -22,15 +22,19 @@
             $agentID= $_POST["agentID"];
     // check first if customer id already in db
             $checkCustomerExists = "SHOW INDEX FROM Customer WHERE CustomerID = '$customerID'";
-            $checkAgentExists = "SHOW INDEX FROM Agent WHERE AgentID = '$agentID'";
+            $query = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $customerID . '"';
+            $checkAgentExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $agentID . '"';
             if ($result = mysqli_query($connection, $checkCustomerExists)){
                 //customer already exists in the db
                 echo '<h1>Customer '. $customerID. ' '. $firstName. ' '. $lastName. ' already exists in the database</h1>';
             }
-//            $result = mysqli_query($connection, $checkAgentExists);
-//            se
+            //check if agent exists
+            if (!$result = mysqli_query($connection, $checkAgentExists)){
+                            //customer already exists in the db
+                            echo '<h1>agent doesnt exist</h1>';
+            }
             else{
-                $query = "INSERT INTO Customer VALUES ('$customerID', '$firstName', '$lastName', '$city', '$phoneNumber', '$agentID')";
+                $query = 'INSERT INTO Customer VALUES ('$customerID', '$firstName', '$lastName', '$city', '$phoneNumber', '$agentID')';
                 $result = mysqli_query($connection,$query);
                 if (!$result) {
                     die("databases query failed.");
