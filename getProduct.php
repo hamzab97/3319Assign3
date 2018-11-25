@@ -24,7 +24,7 @@
             die("databases query failed.");
         }
         while ($row = mysqli_fetch_assoc($result)) {
-             echo '<p>';
+             echo '<p> hello ';
              echo $row;
              echo '</p>';
         }
