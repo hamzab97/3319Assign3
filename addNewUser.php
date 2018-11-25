@@ -23,7 +23,7 @@
     // check first if customer id already in db
             $query="SELECT * FROM Customer where CustomerID='".$customerID."';
 //            $checkCustomerExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $customerID . '"';
-//            $checkAgentExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $agentID . '"';
+//            $checkAgentExists = 'SHOW INDEX FROM Agent WHERE AgentID ="' . $agentID . '"';
             if ($result = mysqli_query($connection, $query)){
                 //customer already exists in the db
                 if(mysqli_num_rows($result)>0){
