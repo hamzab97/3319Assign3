@@ -21,7 +21,7 @@
             $city= $_POST["city"];
             $agentID= $_POST["agentID"];
     // check first if customer id already in db
-            $query="SELECT * FROM Customer where CustomerID='".$customerID."';
+            $query='SELECT * FROM Customer where CustomerID="'.$customerID.'"';
 //            $checkCustomerExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $customerID . '"';
 //            $checkAgentExists = 'SHOW INDEX FROM Agent WHERE AgentID ="' . $agentID . '"';
             if ($result = mysqli_query($connection, $query)){
