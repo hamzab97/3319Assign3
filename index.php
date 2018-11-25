@@ -32,30 +32,30 @@
     <div class="container">
         <!--insert new customer form-->
         <h5>Submit new user</h5>
-        <form>
+        <form action="addNewUser.php" method="post">
             <div class="form-group">
                 <label for="customerID">Customer ID</label>
-                <input type="text" class="form-control" id="customerID" placeholder="Enter name">
+                <input type="text" class="form-control" name="customerID" placeholder="Enter customer ID">
             </div>
             <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Enter name">
+                <input type="text" class="form-control" name="firstName" placeholder="Enter name">
             </div>
             <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Enter lastname">
+                <input type="text" class="form-control" name="lastName" placeholder="Enter lastname">
             </div>
             <div class="form-group">
                 <label for="phoneNumber">Phone number</label>
-                <input type="number" class="form-control" id="phoneNumber"  placeholder="Enter phone number">
+                <input type="number" class="form-control" name="phoneNumber"  placeholder="Enter phone number">
             </div>
             <div class="form-group">
                 <label for="city">City</label>
-                <input type="text" class="form-control" id="city"  placeholder="Enter city">
+                <input type="text" class="form-control" name="city"  placeholder="Enter city">
             </div>
             <div class="form-group">
                 <label for="agentID">Agent ID</label>
-                <input type="text" class="form-control" id="agentID" placeholder="Enter agent ID">
+                <input type="text" class="form-control" name="agentID" placeholder="Enter agent ID">
             </div>
             <button type="submit" class="btn btn-primary" id="submitNewUser">Submit</button>
         </form>
