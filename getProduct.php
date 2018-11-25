@@ -31,5 +31,9 @@
         mysqli_free_result($result);
     ?>
 
+    <form action="index.php" method="post">
+         <input type="submit" value="Go back to homepage">
+    </form>
+
 </body>
 </html>
