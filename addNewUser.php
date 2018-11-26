@@ -45,7 +45,7 @@
                                 $query = 'INSERT INTO Customer VALUES ("'.$customerID.'", "'. $firstName.'", "'.$lastName.'", "'.$city.'", "'.$phoneNumber.'", "'.$agentID.'")';
                                 $result = mysqli_query($connection,$query);
                                 if (!$result) {
-                                    die("databases query failed.");
+                                    echo "<p>databases query failed.</p>";
                                 }
                                 else {
                                      echo '<p>inserted customer into db</p>';
