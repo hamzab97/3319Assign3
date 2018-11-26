@@ -94,28 +94,42 @@
 
         <!--insert new product form-->
         <div class="container">
-            <!--insert new customer form-->
-            <h5>Submit new product</h5>
-            <form>
-                <div class="form-group">
-                    <label for="productID">Product ID</label>
-                    <input type="text" class="form-control" id="productID" placeholder="Enter product ID">
-                </div>
-                <div class="form-group">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" class="form-control" id="quantity" placeholder="Enter quantity">
-                </div>
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <input type="text" class="form-control" id="description"  placeholder="Enter description">
-                </div>
-                <div class="form-group">
-                    <label for="cost">Cost</label>
-                    <input type="number" class="form-control" id="cost"  placeholder="Enter cost">
-                </div>
+            <div class="row">
+                <div class="col-sm">
+                    <!--insert new customer form-->
+                    <h5>Submit new product</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="productID">Product ID</label>
+                            <input type="text" class="form-control" id="productID" placeholder="Enter product ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="Enter quantity">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" class="form-control" id="description"  placeholder="Enter description">
+                        </div>
+                        <div class="form-group">
+                            <label for="cost">Cost</label>
+                            <input type="number" class="form-control" id="cost"  placeholder="Enter cost">
+                        </div>
 
-                <button type="submit" class="btn btn-primary" id="submitNewProduct">Submit</button>
-            </form>
+                        <button type="submit" class="btn btn-primary" id="submitNewProduct">Submit</button>
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <!--insert new customer form-->
+                    <h5>show all products</h5>
+                    <form action="productsByDescription.php" method="post">
+                         <button type="submit" class="btn btn-primary" id="updateNumber">View all products sorted by description</button>
+                    </form>
+                    <form action="productsByPrice.php" method="post">
+                         <button type="submit" class="btn btn-primary" id="updateNumber">View all products sorted by price</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <!--bootstrap javascript cdns-->
