@@ -47,14 +47,14 @@
                                 if (!$result) {
                                     die("databases query failed.");
                                 }
-                                while ($row = mysqli_fetch_assoc($result)) {
+                                else {
                                      echo '<p>inserted customer into db</p>';
                                 }
                                 mysqli_free_result($result);
 
                             }else{ //agent doesnt exists, cannot add customer
 
-                                echo "<h1>agent doesnt exist";
+                                echo "<h1>agent doesnt exist</h1>";
 
                             }
                         }
