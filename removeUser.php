@@ -26,7 +26,7 @@
             else {
                  echo '<p>deleted customer from db</p>';
             }
-            mysqli_free_result($result);
+            mysqli_close($connection);
         ?>
 
         <form action="index.php" method="post">
