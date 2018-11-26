@@ -1,6 +1,6 @@
 <?php
 //get customer data from mysql db
-    $query = "SELECT FirstName, LastName, CustomerID FROM Customer ORDER BY Customer.LastName"; //get all the data from customer table, order it by the lastname
+    $query = "SELECT FirstName, LastName, CustomerID, PhoneNumber FROM Customer ORDER BY Customer.LastName"; //get all the data from customer table, order it by the lastname
     $result = mysqli_query($connection,$query);
     if (!$result) {
          die("databases query failed.");
