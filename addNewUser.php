@@ -44,6 +44,7 @@
                                 //agent exists, can add customer
                                 $query = 'INSERT INTO Customer VALUES ("'.$customerID.'", "'. $firstName.'", "'.$lastName.'", "'.$city.'", "'.$phoneNumber.'", "'.$agentID.'")';
                                 $result = mysqli_query($connection,$query);
+                                echo $result;
                                 if (!$result) {
                                     echo "<p>databases query failed.</p>";
                                 }
