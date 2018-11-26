@@ -82,7 +82,7 @@
                 <h5>Update user phone number</h5>
                 <form action="updatePhoneNumber.php" method="post">
                     <?php
-                        include 'getUserData.php';
+                        include 'getUserDataWithPhoneNumber.php';
                      ?>
                      <label for="phoneNumber">New phone number</label>
                      <input type="text" class="form-control" name="phoneNumber" placeholder="New phone number">
