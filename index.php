@@ -21,15 +21,26 @@
 
     <div class="container">
         <h5>Users</h5>
-        <form action="getProduct.php" method="post">
-            <?php
-                include 'getUserData.php';
-             ?>
-             <input type="submit" value="Get Products">
-             <form action="removeUser.php" method="post">
-                 <input type="submit" value="Remove User">
-             </form>
-        </form>
+        <div class="row">
+            <div class="col-sm">
+                <h4>View products of the following customers</h4>
+                <form action="getProduct.php" method="post">
+                    <?php
+                        include 'getUserData.php';
+                     ?>
+                     <input type="submit" value="Get Products">
+                </form>
+            </div>
+            <div class="col-sm">
+                <h4>remove one of the following customers</h4>
+                <form action="removeUser.php" method="post">
+                    <?php
+                        include 'getUserData.php';
+                     ?>
+                     <input type="submit" value="Remove Customer">
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="container">
