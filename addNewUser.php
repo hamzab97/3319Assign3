@@ -46,7 +46,7 @@
 //                                $query = 'INSERT INTO Customer VALUES ("'.$customerID.'", "'. $firstName.'", "'.$lastName.'", "'.$city.'", "'.$phoneNumber.'", "'.$agentID.'")';
 //                                $result = mysqli_query($connection,$query);
 //                                echo $result;
-                                if (! mysqli_query($connection,$query);) {
+                                if (! mysqli_query($connection,$query)) {
                                     die("Error: insert failed" . mysqli_error($connection));
                                 }
                                  echo "new customer was added!";
