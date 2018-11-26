@@ -11,7 +11,7 @@
         ?>
 
         <?php
-            echo "<h1>remove customer customer ";
+            echo "<h1>remove customer ";
             echo $_POST["customername"];
             echo "</h1>";
             $whichCustomer = $_POST["customername"]; //customer ID of the customer picked

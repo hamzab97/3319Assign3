@@ -26,9 +26,9 @@
                 include 'getUserData.php';
              ?>
              <input type="submit" value="Get Products">
-        </form>
-        <form action="removeUser.php" method="post">
-            <input type="submit" value="Remove User">
+             <form action="removeUser.php" method="post">
+                 <input type="submit" value="Remove User">
+             </form>
         </form>
     </div>
 
