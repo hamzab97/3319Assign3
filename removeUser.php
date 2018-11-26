@@ -16,7 +16,7 @@
             echo "</h1>";
             $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
 // check first if customer id already in db
-            $query='DELETE * FROM Customer where CustomerID="'.$whichCustomer.'"';
+            $query='DELETE FROM Customer where CustomerID="'.$whichCustomer.'"';
 //            $checkCustomerExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $customerID . '"';
 //            $checkAgentExists = 'SHOW INDEX FROM Agent WHERE AgentID ="' . $agentID . '"';
             $result = mysqli_query($connection, $query);
