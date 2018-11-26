@@ -28,7 +28,7 @@
                     <?php
                         include 'getUserData.php';
                      ?>
-                     <input type="submit" value="Get Products">
+                     <button type="submit" class="btn btn-primary" id="getProducts">Get Products</button>
                 </form>
             </div>
             <div class="col-sm">
@@ -37,7 +37,7 @@
                     <?php
                         include 'getUserData.php';
                      ?>
-                     <input type="submit" value="Remove Customer">
+                     <button type="submit" class="btn btn-primary" id="removeCustomer">Remove Customer</button>
                 </form>
             </div>
         </div>
@@ -76,6 +76,20 @@
                     <button type="submit" class="btn btn-primary" id="submitNewUser">Submit</button>
                 </form>
             </div>
+
+            <div class="col-sm">
+                <!--update customer phone number form -->
+                <h5>Update user phone number</h5>
+                <form action="updatePhoneNumber.php" method="post">
+                    <?php
+                        include 'getUserData.php';
+                     ?>
+                     <label for="phoneNumber">New phone number</label>
+                     <input type="text" class="form-control" name="phoneNumber" placeholder="New phone number">
+                     <button type="submit" class="btn btn-primary" id="updateNumber">Update customer phone number</button>
+                </form>
+            </div>
+
         </div>
     </div>
 
