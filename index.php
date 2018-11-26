@@ -27,6 +27,9 @@
              ?>
              <input type="submit" value="Get Products">
         </form>
+        <form action="removeUser.php" method="post">
+            <input type="submit" value="Remove User">
+        </form>
     </div>
 
     <div class="container">
@@ -60,16 +63,6 @@
                         <input type="text" class="form-control" name="agentID" placeholder="Enter agent ID">
                     </div>
                     <button type="submit" class="btn btn-primary" id="submitNewUser">Submit</button>
-                </form>
-            </div>
-            <div class="col-sm">
-                <h5>remove customer</h5>
-                <form action="removeUser.php" method="post">
-                    <div class="form-group">
-                        <label for="customerID">Customer ID</label>
-                        <input type="text" class="form-control" name="customerID" placeholder="Enter customer ID">
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="deleteUser">Submit</button>
                 </form>
             </div>
         </div>

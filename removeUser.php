@@ -11,24 +11,24 @@
         ?>
 
         <?php
-            $customerID = $_POST["customerID"]; //customer ID of the customer picked
             if (!$customerID){
                 echo "<h1> missing information </h1>";
             }
             else{
-                echo "<h1>deleting customer customer ";
-                echo $_POST["customerID"];
+                echo "<h1>remove customer customer ";
+                echo $_POST["customername"];
                 echo "</h1>";
+                $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
     // check first if customer id already in db
-                $query='DELETE * FROM Customer where CustomerID="'.$customerID.'"';
+                $query='DELETE * FROM Customer where CustomerID="'.$whichCustomer.'"';
     //            $checkCustomerExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $customerID . '"';
     //            $checkAgentExists = 'SHOW INDEX FROM Agent WHERE AgentID ="' . $agentID . '"';
-                $result = mysqli_query($connection, $query)
+                $result = mysqli_query($connection, $query);
                 if (!$result) {
                     die("databases query failed.");
                 }
                 else {
-                     echo '<p>inserted customer into db</p>';
+                     echo '<p>deleted customer from db</p>';
                 }
                 mysqli_free_result($result);
             }

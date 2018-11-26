@@ -42,15 +42,15 @@
                             //customer already exists in the db
                             if(mysqli_num_rows($result)>0){
                                 //agent exists, can add customer
-                            $query = 'INSERT INTO Customer VALUES ("'.$customerID.'", "'. $firstName.'", "'.$lastName.'", "'.$city.'", "'.$phoneNumber.'", "'.$agentID.'")';
-                            $result = mysqli_query($connection,$query);
-                            if (!$result) {
-                                die("databases query failed.");
-                            }
-                            while ($row = mysqli_fetch_assoc($result)) {
-                                 echo '<p>inserted customer into db</p>';
-                            }
-                            mysqli_free_result($result);
+                                $query = 'INSERT INTO Customer VALUES ("'.$customerID.'", "'. $firstName.'", "'.$lastName.'", "'.$city.'", "'.$phoneNumber.'", "'.$agentID.'")';
+                                $result = mysqli_query($connection,$query);
+                                if (!$result) {
+                                    die("databases query failed.");
+                                }
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                     echo '<p>inserted customer into db</p>';
+                                }
+                                mysqli_free_result($result);
 
                             }else{ //agent doesnt exists, cannot add customer
 
