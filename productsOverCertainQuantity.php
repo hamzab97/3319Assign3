@@ -21,6 +21,9 @@
                 //select Customer.FirstName, Product.Description, BoughtBy.Quantity  from Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID
                 //and BoughtBy.Quantity > 5 JOIN Customer ON Customer.CustomerID = BoughtBy.CustomerID;
                 $result = mysqli_query($connection,$query);
+                if (!$result) {
+                    die("databases query failed.");
+                }
                 while ($row = mysqli_fetch_assoc($result)) {
                             echo $row["Customer.FirstName"]. " ". $row["Product.Description"]. " ". $row["BoughtBy.Quantity"];
                     //        var_dump($row);
