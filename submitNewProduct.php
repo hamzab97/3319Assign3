@@ -39,13 +39,22 @@
                                     //update value of row using new amount
                                     //query = update BoughtBy set quantity = newamount where productid = productid and customerid = customerid;
                                     $query = 'UPDATE BoughtBy SET QUANTITY="' . $quantity . '" WHERE ProductID="' . $productID . '" AND CustomerID="' . $customerID. '"';
-
+                                    $result=mysqli_query($connection, $query);
+                                    if (!$result) {
+                                             die("databases query failed.");
+                                    }
+                                    echo "<h5>Customer quantity updated</h5>";
                                 }
                             }
                             else{
                                 //customer has not purchased product, add it to the bought by table
                                 //new query
                                 $query = 'INSERT INTO BoughtBy VALUES("' . $quantity . '","' . $productID . '","' . $customerID. '")';
+                                $result=mysqli_query($connection, $query);
+                                if (!$result) {
+                                         die("databases query failed.");
+                                }
+                                echo "<h5>Customer purchase inserted</h5>";
                             }
                         }
 
