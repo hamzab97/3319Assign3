@@ -19,6 +19,7 @@
             }
             else{
     // check first if customer id already in db
+                echo '<h1>Submit new product"'. $productID. '" as a purchase for customer "'. $customerID. '" quantity = "'. $quantity. '"</h1>';
                 $query='SELECT * FROM Customer where CustomerID="'.$customerID.'"';
     //            $checkCustomerExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $customerID . '"';
     //            $checkAgentExists = 'SHOW INDEX FROM Agent WHERE AgentID ="' . $agentID . '"';
