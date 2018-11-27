@@ -20,7 +20,7 @@
                 $query='SELECT * FROM Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID AND Quantity>"'.$quantity.'" JOIN Customer ON Customer.CustomerID = BoughtBy.CustomerID';
                 //select Customer.FirstName, Product.Description, BoughtBy.Quantity  from Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID
                 //and BoughtBy.Quantity > 5 JOIN Customer ON Customer.CustomerID = BoughtBy.CustomerID;
-
+                $result = mysqli_query($connection,$query);
                 while ($row = mysqli_fetch_assoc($result)) {
                             echo $row["Customer.FirstName"]. " ". $row["Product.Description"]. " ". $row["BoughtBy.Quantity"];
                     //        var_dump($row);
