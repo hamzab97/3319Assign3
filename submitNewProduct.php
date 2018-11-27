@@ -27,7 +27,7 @@
                     if(mysqli_num_rows($result)>0){
                         //customer exists
                         //check if customer has bought product before
-                        $query='SELECT * FROM BoughtBy where CustomerID="'.$customerID.'" AND ProductID ="'=.$productID.'"';
+                        $query='SELECT * FROM BoughtBy where CustomerID="'.$customerID.'" AND ProductID ="'.$productID.'"';
                         if ($result=mysqli_query($connection, $query)){
                             if (mysqli_num_rows($result)>0){
                                 //customer has laready purchased product
