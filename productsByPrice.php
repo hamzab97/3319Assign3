@@ -17,14 +17,14 @@
     //        echo '<h1>hello';
     //        echo $whichCustomer;
     //        echo '</h1>';
-            $query = 'SELECT Product.Description, Product.CostPerItem FROM Product ORDER BY CostPerItem';
+            $query = 'SELECT * FROM Product ORDER BY CostPerItem';
             $result = mysqli_query($connection,$query);
             if (!$result) {
                 die("databases query failed.");
             }
             while ($row = mysqli_fetch_assoc($result)) {
                  echo '<p>';
-                 echo $row[0]. " ". $row["Product.CostPerItem"];
+                 echo $row["Description"]. " ". $row["CostPerItem"];
                  echo '</p>';
             }
             mysqli_free_result($result);

@@ -18,14 +18,14 @@
     //        echo '<h1>hello';
     //        echo $whichCustomer;
     //        echo '</h1>';
-            $query = 'SELECT Product.Description FROM Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID AND BoughtBy.CustomerID ="' . $whichCustomer . '"';
+            $query = 'SELECT * FROM Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID AND BoughtBy.CustomerID ="' . $whichCustomer . '"';
             $result = mysqli_query($connection,$query);
             if (!$result) {
                 die("databases query failed.");
             }
             while ($row = mysqli_fetch_assoc($result)) {
                  echo '<p>';
-                 echo $row["Product.Description"];
+                 echo $row["Description"];
                  echo '</p>';
             }
             mysqli_free_result($result);
