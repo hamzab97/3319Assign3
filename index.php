@@ -126,12 +126,25 @@
                 </div>
             </div>
             <div class="row">
-                <h5>enter product quantity and show the customers who have purchased more than that quantity</h5>
-                <form action="productsOverCertainQuantity.php" method="post">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity">
-                    <button type="submit" class="btn btn-primary" id="viewQuantity">View all products bought over a certain quantity</button>
-                </form>
+                <div class="col-sm">
+                    <h5>enter product quantity and show the customers who have purchased more than that quantity</h5>
+                    <form action="productsOverCertainQuantity.php" method="post">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity">
+                        <button type="submit" class="btn btn-primary" id="viewQuantity">View all products bought over a certain quantity</button>
+                    </form>
+                </div>
+
+                <div class="col-sm">
+                    <h5>Choose product to view all details</h5>
+                    <form action="getAllProductData.php" method="post">
+                        <?php
+                            include 'getAllProducts.php';
+                         ?>
+                         <button type="submit" class="btn btn-primary" id="getProductData">Get Product data</button>
+                    </form>
+                </div>
+
             </row>
         </div>
 
