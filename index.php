@@ -97,25 +97,20 @@
             <div class="row">
                 <div class="col-sm">
                     <!--insert new customer form-->
-                    <h5>Submit new product</h5>
-                    <form>
+                    <h5>Submit new product purchase</h5>
+                    <form action ="submitNewProduct.php" method="post">
+                        <div class="form-group">
+                            <label for="customerID">Customer ID</label>
+                            <input type="text" class="form-control" name="customerID" placeholder="Enter customer ID">
+                        </div>
                         <div class="form-group">
                             <label for="productID">Product ID</label>
-                            <input type="text" class="form-control" id="productID" placeholder="Enter product ID">
+                            <input type="text" class="form-control" id="productID" name="productID" placeholder="Enter product ID">
                         </div>
                         <div class="form-group">
                             <label for="quantity">Quantity</label>
-                            <input type="number" class="form-control" id="quantity" placeholder="Enter quantity">
+                            <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity">
                         </div>
-                        <div class="form-group">
-                            <label for="description">Description</label>
-                            <input type="text" class="form-control" id="description"  placeholder="Enter description">
-                        </div>
-                        <div class="form-group">
-                            <label for="cost">Cost</label>
-                            <input type="number" class="form-control" id="cost"  placeholder="Enter cost">
-                        </div>
-
                         <button type="submit" class="btn btn-primary" id="submitNewProduct">Submit</button>
                     </form>
                 </div>
@@ -130,6 +125,14 @@
                     </form>
                 </div>
             </div>
+            <div class="row">
+                <h5>enter product quantity and show the customers who have purchased more than that quantity</h5>
+                <form action="productsOverCertainQuantity.php" method="post">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity">
+                    <button type="submit" class="btn btn-primary" id="viewQuantity">View all products bought over a certain quantity</button>
+                </form>
+            </row>
         </div>
 
         <!--bootstrap javascript cdns-->
