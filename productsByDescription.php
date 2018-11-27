@@ -23,8 +23,8 @@
                 die("databases query failed.");
             }
             while ($row = mysqli_fetch_assoc($result)) {
-                 echo '<p>hoi';
-                 echo $row["Product.Description"]. " ". $row[1];
+                 echo '<p>hoi ';
+                 echo $row;
                  echo '</p>';
             }
             mysqli_free_result($result);
