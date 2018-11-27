@@ -45,6 +45,9 @@
                                     }
                                     echo "<h5>Customer quantity updated</h5>";
                                 }
+                                else{
+                                    echo "<h5>can't decrease customer purchase quantity</h5>";
+                                }
                             }
                             else{
                                 //customer has not purchased product, add it to the bought by table
