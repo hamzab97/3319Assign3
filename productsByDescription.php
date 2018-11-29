@@ -29,7 +29,9 @@
             }
             mysqli_free_result($result);
         ?>
-
+        <?php
+           mysqli_close($connection);
+        ?>
         <form action="index.php" method="post">
              <input type="submit" value="Go back to homepage">
         </form>
