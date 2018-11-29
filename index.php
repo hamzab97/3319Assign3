@@ -123,6 +123,9 @@
                     <form action="productsByPrice.php" method="post">
                          <button type="submit" class="btn btn-primary" id="updateNumber">View all products sorted by price</button>
                     </form>
+                    <form action="productsNotPurchased.php" method="post">
+                        <button type="submit" class="btn btn-primary" id="updateNumber">View all products that have not been purchased</button>
+                    </form>
                 </div>
             </div>
             <div class="row">

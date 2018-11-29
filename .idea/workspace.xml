@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65eb6478-9be0-43c9-9799-b2a840cf6037" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/productsNotPurchased.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submitNewProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/submitNewProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,26 +27,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="php" value="30" />
+          <entry key="php" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="30" />
+          <entry key="PHP" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="921" />
-          <entry key="php" value="7021" />
+          <entry key="php" value="7205" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="921" />
-          <entry key="PHP" value="7021" />
+          <entry key="PHP" value="7205" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
@@ -54,10 +55,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="126" column="76" lean-forward="true" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/productsNotPurchased.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getAllProductData.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <caret line="29" selection-end-line="37" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -90,15 +109,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/updatePhoneNumber.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getUserDataWithPhoneNumber.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -117,19 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getAllProducts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/submitNewProduct.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+            <state relative-caret-position="561">
+              <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -157,6 +158,7 @@
       <find>connection</find>
       <find>users</find>
       <find>product</find>
+      <find>show all</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,7 +171,6 @@
         <option value="$PROJECT_DIR$/connectdb.php" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/getUserDataWithPhoneNumber.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/productsByDescription.php" />
         <option value="$PROJECT_DIR$/productsByPrice.php" />
         <option value="$PROJECT_DIR$/removeUser.php" />
@@ -181,6 +182,8 @@
         <option value="$PROJECT_DIR$/getProduct.php" />
         <option value="$PROJECT_DIR$/getAllProductData.php" />
         <option value="$PROJECT_DIR$/submitNewProduct.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/productsNotPurchased.php" />
       </list>
     </option>
   </component>
@@ -245,21 +248,7 @@
       <option name="presentableId" value="Default" />
       <updated>1542907973517</updated>
       <workItem from="1542907974896" duration="68272000" />
-      <workItem from="1543513219638" duration="2887000" />
-    </task>
-    <task id="LOCAL-00057" summary="commit">
-      <created>1543107014835</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1543107014835</updated>
-    </task>
-    <task id="LOCAL-00058" summary="commit">
-      <created>1543168154452</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1543168154452</updated>
+      <workItem from="1543513219638" duration="3702000" />
     </task>
     <task id="LOCAL-00059" summary="commit">
       <created>1543169237759</created>
@@ -590,11 +579,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543515140772</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="commit">
+      <created>1543519042767</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1543519042767</updated>
+    </task>
+    <task id="LOCAL-00107" summary="commit">
+      <created>1543519089638</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1543519089638</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71159000" />
+    <option name="totallyTimeSpent" value="71974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -635,13 +638,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/test.html" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="109" column="48" lean-forward="true" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/productsByDescription.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -705,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getAllProductData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getUserDataWithPhoneNumber.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -728,8 +717,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/submitNewProduct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+        <state relative-caret-position="561">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getAllProductData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="126" column="76" lean-forward="true" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/productsNotPurchased.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
         </state>
       </provider>
     </entry>
