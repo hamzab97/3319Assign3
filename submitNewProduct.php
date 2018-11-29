@@ -55,7 +55,7 @@
                                 $query = 'INSERT INTO BoughtBy VALUES("' . $quantity . '","' . $productID . '","' . $customerID. '")';
                                 $result=mysqli_query($connection, $query);
                                 if (!$result) {
-                                         die("databases query failed.");
+                                        echo "<h5>product doesnt exist</h5>";
                                 }
                                 echo "<h5>Customer purchase inserted</h5>";
                             }
