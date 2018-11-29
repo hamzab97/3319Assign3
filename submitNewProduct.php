@@ -57,7 +57,8 @@
                                 if (!$result) {
                                         echo "<h5>product doesnt exist</h5>";
                                 }
-                                echo "<h5>Customer purchase inserted</h5>";
+                                else{echo "<h5>Customer purchase inserted</h5>";}
+
                             }
                         }
 
