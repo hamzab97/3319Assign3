@@ -16,6 +16,3 @@
     echo '</div>';
     mysqli_free_result($result);
 ?>
-<?php
-   mysqli_close($connection);
-?>
