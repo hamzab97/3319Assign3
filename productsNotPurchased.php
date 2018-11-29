@@ -13,7 +13,7 @@
         <?php
 
             echo 'showing all products that have not been purchased';
-            $query = 'SELECT * FROM Product OUTER JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID';
+            $query = 'SELECT * FROM Product WHERE Product.ProductID NOT IN (SELECT BoughtBy.ProductID FROM BoughtBy)';
             $result = mysqli_query($connection,$query);
             if (!$result) {
                 die("databases query failed.");
