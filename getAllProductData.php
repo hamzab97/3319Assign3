@@ -12,9 +12,9 @@
 
         <?php
             $productname = $_POST["productname"]; //customer ID of the customer picked
-    //        echo '<h1>hello';
-    //        echo $whichCustomer;
-    //        echo '</h1>';
+            echo '<h1>Getting all purchase data for product ';
+            echo $productname;
+            echo '</h1>';
             $query = 'SELECT * FROM BoughtBy JOIN Product ON BoughtBy.ProductID ="' . $productname . '"';
             $result = mysqli_query($connection,$query);
             if (!$result) {
