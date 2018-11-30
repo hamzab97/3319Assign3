@@ -15,6 +15,8 @@
             echo '<h1>Getting all purchase data for product ';
             echo $productname;
             echo '</h1>';
+
+            //query for getting total amoutn purcahsed
             //select * from BoughtBy where BoughtBy.ProductID = (select Product.ProductID from Product where Product.Description = "Socks");
             $query = 'SELECT SUM(Quantity) FROM BoughtBy WHERE BoughtBy.ProductID = (SELECT Product.ProductID FROM Product WHERE Product.Description="' . $productname . '")';
             $result = mysqli_query($connection,$query);
@@ -25,11 +27,18 @@
             echo '<p>total quantity of products purchased ';
             echo $row["SUM(Quantity)"];
             echo '</p>';
-//            while ($row = mysqli_fetch_assoc($result)) {
-//                 echo '<p> hoi : ';
-//                 echo $row["SUM(Quantity)"];
-//                 echo '</p>';
-//            }
+            mysqli_free_result($result);
+
+            //query for getting total revenue from sales of that product
+            $query = 'SELECT SUM(Quantity * CostPerItem)  FROM BoughtBy, Product WHERE BoughtBy.ProductID = Product.ProductID AND Product.Description ="' . $productname . '")';
+            $result = mysqli_query($connection,$query);
+            if (!$result) {
+                die("databases query failed.");
+            }
+            $row = mysqli_fetch_assoc($result);
+            echo '<p>total revenue from sales: ';
+            echo $row["SUM(Quantity)"];
+            echo '</p>';
             mysqli_free_result($result);
         ?>
 
