@@ -21,7 +21,7 @@
 //            $checkAgentExists = 'SHOW INDEX FROM Agent WHERE AgentID ="' . $agentID . '"';
             $result = mysqli_query($connection, $query);
             if (!$result) {
-                die("databases query failed.");
+                echo '<p>user has purchased products, cannot remove</p>';
             }
             else {
                  echo '<p>deleted customer from db</p>';

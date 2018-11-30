@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65eb6478-9be0-43c9-9799-b2a840cf6037" name="Default Changelist" comment="">
+    <list default="true" id="65eb6478-9be0-43c9-9799-b2a840cf6037" name="Default Changelist" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productsNotPurchased.php" beforeDir="false" afterPath="$PROJECT_DIR$/productsNotPurchased.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/removeUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/removeUser.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,26 +26,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="php" value="32" />
+          <entry key="php" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="32" />
+          <entry key="PHP" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="921" />
-          <entry key="php" value="7249" />
+          <entry key="php" value="7935" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="921" />
-          <entry key="PHP" value="7249" />
+          <entry key="PHP" value="7935" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
@@ -56,13 +56,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="126" column="76" lean-forward="true" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
+            <state relative-caret-position="551">
+              <caret line="142" column="51" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/productsNotPurchased.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -74,8 +74,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getAllProductData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="585">
+              <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/removeUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -134,15 +143,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addNewUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -172,17 +172,17 @@
         <option value="$PROJECT_DIR$/getUserDataWithPhoneNumber.php" />
         <option value="$PROJECT_DIR$/productsByDescription.php" />
         <option value="$PROJECT_DIR$/productsByPrice.php" />
-        <option value="$PROJECT_DIR$/removeUser.php" />
         <option value="$PROJECT_DIR$/updatePhoneNumber.php" />
         <option value="$PROJECT_DIR$/getAllProducts.php" />
         <option value="$PROJECT_DIR$/addNewUser.php" />
         <option value="$PROJECT_DIR$/productsOverCertainQuantity.php" />
         <option value="$PROJECT_DIR$/getUserData.php" />
         <option value="$PROJECT_DIR$/getProduct.php" />
-        <option value="$PROJECT_DIR$/getAllProductData.php" />
         <option value="$PROJECT_DIR$/submitNewProduct.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/productsNotPurchased.php" />
+        <option value="$PROJECT_DIR$/getAllProductData.php" />
+        <option value="$PROJECT_DIR$/removeUser.php" />
       </list>
     </option>
   </component>
@@ -247,77 +247,7 @@
       <option name="presentableId" value="Default" />
       <updated>1542907973517</updated>
       <workItem from="1542907974896" duration="68272000" />
-      <workItem from="1543513219638" duration="4504000" />
-    </task>
-    <task id="LOCAL-00060" summary="commit">
-      <created>1543173314254</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1543173314254</updated>
-    </task>
-    <task id="LOCAL-00061" summary="commit">
-      <created>1543174452782</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1543174452782</updated>
-    </task>
-    <task id="LOCAL-00062" summary="commit">
-      <created>1543174751631</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1543174751631</updated>
-    </task>
-    <task id="LOCAL-00063" summary="commit">
-      <created>1543175913702</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1543175913703</updated>
-    </task>
-    <task id="LOCAL-00064" summary="commit">
-      <created>1543176081833</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1543176081833</updated>
-    </task>
-    <task id="LOCAL-00065" summary="commit">
-      <created>1543180808258</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1543180808259</updated>
-    </task>
-    <task id="LOCAL-00066" summary="commit">
-      <created>1543181081770</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1543181081770</updated>
-    </task>
-    <task id="LOCAL-00067" summary="commit">
-      <created>1543181526075</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1543181526076</updated>
-    </task>
-    <task id="LOCAL-00068" summary="commit">
-      <created>1543181614367</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1543181614368</updated>
-    </task>
-    <task id="LOCAL-00069" summary="commit">
-      <created>1543181676114</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1543181676114</updated>
+      <workItem from="1543513219638" duration="10188000" />
     </task>
     <task id="LOCAL-00070" summary="commit">
       <created>1543187396887</created>
@@ -592,14 +522,84 @@
       <option name="project" value="LOCAL" />
       <updated>1543520788581</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="commit">
+      <created>1543521639761</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1543521639761</updated>
+    </task>
+    <task id="LOCAL-00110" summary="commit">
+      <created>1543599112063</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1543599112063</updated>
+    </task>
+    <task id="LOCAL-00111" summary="commit">
+      <created>1543599189920</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1543599189920</updated>
+    </task>
+    <task id="LOCAL-00112" summary="commit">
+      <created>1543599227604</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1543599227604</updated>
+    </task>
+    <task id="LOCAL-00113" summary="commit">
+      <created>1543600653363</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1543600653363</updated>
+    </task>
+    <task id="LOCAL-00114" summary="commit">
+      <created>1543602075764</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1543602075764</updated>
+    </task>
+    <task id="LOCAL-00115" summary="commit">
+      <created>1543606105486</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1543606105486</updated>
+    </task>
+    <task id="LOCAL-00116" summary="commit">
+      <created>1543608374159</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1543608374159</updated>
+    </task>
+    <task id="LOCAL-00117" summary="commit">
+      <created>1543608472291</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1543608472291</updated>
+    </task>
+    <task id="LOCAL-00118" summary="commit">
+      <created>1543608503766</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1543608503766</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72776000" />
+    <option name="totallyTimeSpent" value="78460000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -648,13 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/removeUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -707,20 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="126" column="76" lean-forward="true" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getAllProductData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/connectdb.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -739,6 +718,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="106" selection-start-line="15" selection-start-column="106" selection-end-line="15" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="142" column="51" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getAllProductData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/removeUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
         </state>
       </provider>
     </entry>
