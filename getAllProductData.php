@@ -30,7 +30,7 @@
             mysqli_free_result($result);
 
             //query for getting total revenue from sales of that product
-            $query = 'SELECT SUM(Quantity * CostPerItem)  FROM BoughtBy, Product WHERE BoughtBy.ProductID = Product.ProductID AND Product.Description ="' . $productname . '")';
+            $query = 'SELECT SUM(Quantity * CostPerItem)  FROM BoughtBy, Product WHERE BoughtBy.ProductID = Product.ProductID AND Product.Description ="' . $productname . '"';
             $result = mysqli_query($connection,$query);
             if (!$result) {
                 die("databases query failed.");
