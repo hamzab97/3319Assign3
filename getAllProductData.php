@@ -37,7 +37,7 @@
             }
             $row = mysqli_fetch_assoc($result);
             echo '<p>total revenue from sales: ';
-            echo $row["SUM(Quantity)"];
+            echo $row["SUM(Quantity * CostPerItem)"];
             echo '</p>';
             mysqli_free_result($result);
         ?>
