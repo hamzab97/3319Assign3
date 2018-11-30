@@ -15,7 +15,7 @@
             echo '<h1>Getting all purchase data for product ';
             echo $productname;
             echo '</h1>';
-            $query = 'SELECT * FROM BoughtBy JOIN Product ON BoughtBy.ProductID ="' . $productname . '"';
+            $query = 'SELECT * FROM BoughtBy JOIN Product ON BoughtBy.ProductID =(SELECT Product.ProductID FROM Product WHERE Product.Description="' . $productname . '")';
             $result = mysqli_query($connection,$query);
             if (!$result) {
                 die("databases query failed.");
