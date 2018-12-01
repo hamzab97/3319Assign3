@@ -67,7 +67,7 @@ if the user does not exist in the database, the user is then added given all the
                     }
                 }
             }
-            mysqli_close($connection);
+//            mysqli_close($connection);
         ?>
 
 
