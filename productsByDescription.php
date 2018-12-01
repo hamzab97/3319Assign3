@@ -31,6 +31,7 @@ redirection page for listing descriptions of a selected product
                  echo '</p>';
             }
             mysqli_free_result($result);
+            mysqli_close($connection);
         ?>
 
         <form action="index.php" method="post">
