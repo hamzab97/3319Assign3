@@ -5,7 +5,12 @@
     <title>Add new user</title>
 </head>
     <body>
-
+/**
+file is used when adding a new user to the data base
+error checking for all the fields is conducted
+the query is made to check whether user already exists in the database
+if the user does not exist in the database, the user is then added given all the paramaeters match the required sql fields
+**/
         <?php
             include 'connectdb.php';
         ?>

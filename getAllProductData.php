@@ -5,7 +5,11 @@
     <title>Products</title>
 </head>
     <body>
+/*
+file used fro finding all the data for a given column. the total quantity sold and the total revenue
+gets the product name parameter from the input form from index.php
 
+*/
         <?php
                 include 'connectdb.php';
         ?>
@@ -23,6 +27,7 @@
             if (!$result) {
                 die("databases query failed.");
             }
+
             $row = mysqli_fetch_assoc($result);
             echo '<p>total quantity of products purchased ';
             echo $row["SUM(Quantity)"];

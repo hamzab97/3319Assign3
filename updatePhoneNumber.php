@@ -9,17 +9,17 @@
         <?php
             include 'connectdb.php';
         ?>
-
+//update customer phone number
         <?php
             echo "<h1>update phone number of customer ";
             echo $_POST["customername"];
-            echo "old number is: ";
+            echo "old number is: ";//get name and new number
             echo $_POST["phoneNumber"];
             echo "</h1>";
             $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
             $phoneNumber = $_POST["phoneNumber"];
 // check first if customer id already in db
-            $query='UPDATE Customer SET PhoneNumber="'.$phoneNumber.'" where CustomerID="'.$whichCustomer.'"';
+            $query='UPDATE Customer SET PhoneNumber="'.$phoneNumber.'" where CustomerID="'.$whichCustomer.'"';//query to update
 //            $checkCustomerExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $customerID . '"';
 //            $checkAgentExists = 'SHOW INDEX FROM Agent WHERE AgentID ="' . $agentID . '"';
             $result = mysqli_query($connection, $query);

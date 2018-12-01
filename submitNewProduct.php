@@ -9,7 +9,7 @@
         <?php
             include 'connectdb.php';
         ?>
-
+//post new product ot he databases
         <?php
             $customerID = $_POST["customerID"];
             $productID = $_POST["productID"];
@@ -18,7 +18,7 @@
                 echo "<h1> missing information </h1>";
             }
             else{
-    // check first if customer id already in db
+    // check first if product id already in db
                 echo '<h1>Submit new product"'. $productID. '" as a purchase for customer "'. $customerID. '" quantity = "'. $quantity. '"</h1>';
                 $query='SELECT * FROM Customer where CustomerID="'.$customerID.'"';
     //            $checkCustomerExists = 'SHOW INDEX FROM Customer WHERE CustomerID ="' . $customerID . '"';

@@ -9,14 +9,14 @@
         <?php
             include 'connectdb.php';
         ?>
-
+//script to show products bought over a certain quantity
         <?php
-            $quantity= $_POST["quantity"];
+            $quantity= $_POST["quantity"]; //get the quantity entered by user
             if (!$quantity){
                 echo "<h1> missing information </h1>";
             }
             else{
-    // check first if customer id already in db
+    // query
                 $query='SELECT * FROM Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID AND Quantity>"'.$quantity.'" JOIN Customer ON Customer.CustomerID = BoughtBy.CustomerID';
                 //select Customer.FirstName, Product.Description, BoughtBy.Quantity  from Product JOIN BoughtBy ON Product.ProductID = BoughtBy.ProductID
                 //and BoughtBy.Quantity > 5 JOIN Customer ON Customer.CustomerID = BoughtBy.CustomerID;
@@ -26,7 +26,7 @@
                 }
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<h3> ";
-                    echo $row["FirstName"]. " ". $row["Description"]. " ". $row["Quantity"];
+                    echo $row["FirstName"]. " ". $row["Description"]. " ". $row["Quantity"];//display
                     //        var_dump($row);
                     //        echo $row;
                     echo "</h3> ";

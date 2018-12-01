@@ -9,7 +9,7 @@
         <?php
             include 'connectdb.php';
         ?>
-
+//script to remove a certain user
         <?php
             echo "<h1>remove customer ";
             echo $_POST["customername"];

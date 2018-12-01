@@ -5,7 +5,7 @@
     if (!$result) {
          die("databases query failed.");
     }
-    echo '<div class="list-group" id="myList" role="tablist">';
+    echo '<div class="list-group" id="myList" role="tablist">';//create lsit group which displays customer data in radio buttons
     while ($row = mysqli_fetch_assoc($result)) {
             echo '<input type="radio" name="customername" value="';
             echo $row["CustomerID"];

@@ -1,3 +1,6 @@
+/*
+redirection page for listing descriptions of a selected product
+*/
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,18 +16,18 @@
         <?php
             echo "<h1>showing all products by description ";
             echo "</h1>";
-            $whichCustomer = $_POST["customername"]; //customer ID of the customer picked
+            $whichCustomer = $_POST["customername"]; //product ID of the customer picked
     //        echo '<h1>hello';
     //        echo $whichCustomer;
     //        echo '</h1>';
-            $query = 'SELECT * FROM Product ORDER BY Description';
+            $query = 'SELECT * FROM Product ORDER BY Description'; //sql query to get all the products
             $result = mysqli_query($connection,$query);
             if (!$result) {
                 die("databases query failed.");
             }
             while ($row = mysqli_fetch_assoc($result)) {
                  echo '<p>';
-                 echo $row["Description"]. " ". $row["CostPerItem"];
+                 echo $row["Description"]. " ". $row["CostPerItem"];//display the data
                  echo '</p>';
             }
             mysqli_free_result($result);

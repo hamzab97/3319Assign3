@@ -9,7 +9,7 @@
         <?php
                 include 'connectdb.php';
         ?>
-
+//get all the products by price
         <?php
             echo "<h1>showing all products by price ";
             echo "</h1>";
@@ -17,7 +17,7 @@
     //        echo '<h1>hello';
     //        echo $whichCustomer;
     //        echo '</h1>';
-            $query = 'SELECT * FROM Product ORDER BY CostPerItem';
+            $query = 'SELECT * FROM Product ORDER BY CostPerItem'; //query
             $result = mysqli_query($connection,$query);
             if (!$result) {
                 die("databases query failed.");
