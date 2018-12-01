@@ -9,8 +9,9 @@
         <?php
             include 'connectdb.php';
         ?>
-//update customer phone number
         <?php
+        //update customer phone number
+
             echo "<h1>update phone number of customer ";
             echo $_POST["customername"];
             echo "old number is: ";//get name and new number

@@ -9,8 +9,9 @@
         <?php
                 include 'connectdb.php';
         ?>
-//get all the products by price
+
         <?php
+        //get all the products by price
             echo "<h1>showing all products by price ";
             echo "</h1>";
             $whichCustomer = $_POST["customername"]; //customer ID of the customer picked

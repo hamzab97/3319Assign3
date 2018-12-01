@@ -5,16 +5,17 @@
     <title>Products</title>
 </head>
     <body>
-/*
-script responsible to obtain all the products purchased by the a customer that the user selects
-form in index.php passes the customer ID which is assigned a variable
-the variable is used in the query to obtain all the products
-*/
+
         <?php
                 include 'connectdb.php';
         ?>
 
         <?php
+        /*
+        script responsible to obtain all the products purchased by the a customer that the user selects
+        form in index.php passes the customer ID which is assigned a variable
+        the variable is used in the query to obtain all the products
+        */
             echo "<h1>Products purchased by customer ";
             echo $_POST["customername"];
             echo "</h1>";
@@ -33,6 +34,7 @@ the variable is used in the query to obtain all the products
                  echo '</p>';
             }
             mysqli_free_result($result);
+            mysqli_close($connection);
         ?>
 
 

@@ -9,8 +9,9 @@
         <?php
             include 'connectdb.php';
         ?>
-//script to show products bought over a certain quantity
         <?php
+        //script to show products bought over a certain quantity
+
             $quantity= $_POST["quantity"]; //get the quantity entered by user
             if (!$quantity){
                 echo "<h1> missing information </h1>";
@@ -32,6 +33,7 @@
                     echo "</h3> ";
                 }
             }
+            mysqli_close($connection);
         ?>
 
 

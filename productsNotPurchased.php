@@ -24,6 +24,7 @@
                  echo '</p>';//interate and display results
             }
             mysqli_free_result($result);
+            mysqli_close($connection);
         ?>
 
 

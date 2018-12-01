@@ -1,6 +1,4 @@
-/*
-redirection page for listing descriptions of a selected product
-*/
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +12,9 @@ redirection page for listing descriptions of a selected product
         ?>
 
         <?php
+        /*
+        redirection page for listing descriptions of a selected product
+        */
             echo "<h1>showing all products by description ";
             echo "</h1>";
             $whichCustomer = $_POST["customername"]; //product ID of the customer picked

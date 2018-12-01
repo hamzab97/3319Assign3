@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-/*
+<!--/*
 index.php is the main file display to the user
 calls all the other scripts to get, post, put uesr information
-*/
+*/-->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -23,7 +23,7 @@ calls all the other scripts to get, post, put uesr information
             </div>
         </div>
 
-        <div class="container"> //container holds hte information of the user
+        <div class="container"> <!--//container holds hte information of the user-->
             <h5>Users</h5>
             <div class="row">
                 <div class="col-sm">
@@ -47,11 +47,11 @@ calls all the other scripts to get, post, put uesr information
             </div>
         </div>
 
-        <div class="container"> //container holds the form to intsert new customer information
+        <div class="container"> <!--// //container holds the form to intsert new customer information-->
             <div class="row">
                 <div class="col-sm">
                     <!--insert new customer form-->
-                    <h5>Submit new user</h5> //fields to geet data
+                    <h5>Submit new user</h5> <!--//fields to geet data-->
                     <form action="addNewUser.php" method="post">
                         <div class="form-group">
                             <label for="customerID">Customer ID</label>
@@ -77,11 +77,11 @@ calls all the other scripts to get, post, put uesr information
                             <label for="agentID">Agent ID</label>
                             <input type="text" class="form-control" name="agentID" placeholder="Enter agent ID">
                         </div>
-                        <button type="submit" class="btn btn-primary" id="submitNewUser">Submit</button> //submit button
+                        <button type="submit" class="btn btn-primary" id="submitNewUser">Submit</button>
                     </form>
                 </div>
 
-                <div class="col-sm"> //container to update user phone number, calls script that displays user names and current phone numbers and a field that allows user to enter updated number
+                <div class="col-sm"> <!--//container to update user phone number, calls script that displays user names and current phone numbers and a field that allows user to enter updated number-->
                     <!--update customer phone number form -->
                     <h5>Update user phone number</h5>
                     <form action="updatePhoneNumber.php" method="post">
@@ -96,10 +96,10 @@ calls all the other scripts to get, post, put uesr information
             </div>
         </div>
 
-        <div class="container"> //container that displays ohter user infmration
+        <div class="container"> <!--//container that displays ohter user infmration-->
             <div class="row">
                 <div class="col-sm">
-                    <h5>Submit new product purchase</h5> //submit new user product purcahses, fields to enter infrmation
+                    <h5>Submit new product purchase</h5> <!--//submit new user product purcahses, fields to enter infrmation-->
                     <form action ="submitNewProduct.php" method="post">
                         <div class="form-group">
                             <label for="customerID">Customer ID</label>
@@ -117,19 +117,19 @@ calls all the other scripts to get, post, put uesr information
                     </form>
                 </div>
                 <div class="col-sm">
-                    <h5>show all products</h5> //button to show all theuser infmration
+                    <h5>show all products</h5> <!--//button to show all theuser infmration-->
                     <form action="productsByDescription.php" method="post">
-                         <button type="submit" class="btn btn-primary" id="updateNumber">View all products sorted by description</button> //sort products by description
+                         <button type="submit" class="btn btn-primary" id="updateNumber">View all products sorted by description</button> <!--///sort products by description-->
                     </form>
                     <form action="productsByPrice.php" method="post">
-                         <button type="submit" class="btn btn-primary" id="updateNumber">View all products sorted by price</button>//sort by price
+                         <button type="submit" class="btn btn-primary" id="updateNumber">View all products sorted by price</button> <!--//sort by price-->
                     </form>
                     <form action="productsNotPurchased.php" method="post">
-                        <button type="submit" class="btn btn-primary" id="updateNumber">View all products that have not been purchased</button>//button to show all products that havent been purcahsed yet
+                        <button type="submit" class="btn btn-primary" id="updateNumber">View all products that have not been purchased</button> <!--//button to show all products that havent been purcahsed yet -->
                     </form>
                 </div>
             </div>
-            <div class="row">//display field and button to allow user to picka number to display products that were purchased ove ra certai amount
+            <div class="row"> <!--//display field and button to allow user to picka number to display products that were purchased ove ra certai amount-->
                 <div class="col-sm">
                     <h5>enter product quantity and show the customers who have purchased more than that quantity</h5>
                     <form action="productsOverCertainQuantity.php" method="post">
@@ -139,7 +139,7 @@ calls all the other scripts to get, post, put uesr information
                     </form>
                 </div>
 
-                <div class="col-sm"> //container to display all hte details of the products for hte user
+                <div class="col-sm">  <!--//container to display all hte details of the products for hte user-->
                     <h5>Choose product to view all details</h5>
                     <form action="getAllProductData.php" method="post">
                         <?php

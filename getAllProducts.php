@@ -1,7 +1,8 @@
+
+<?php
 /*
 script to obtain all the products in the database and list them in radio buttons for hte user to select
 */
-<?php
 //get customer data from mysql db
     $query = "SELECT * FROM Product"; //get all the data from customer table, order it by the lastname
     $result = mysqli_query($connection,$query);

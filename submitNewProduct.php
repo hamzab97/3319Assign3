@@ -9,8 +9,9 @@
         <?php
             include 'connectdb.php';
         ?>
-//post new product ot he databases
         <?php
+        //post new product ot he databases
+
             $customerID = $_POST["customerID"];
             $productID = $_POST["productID"];
             $quantity= $_POST["quantity"];
@@ -69,6 +70,7 @@
                     }
                 }
             }
+            mysqli_close($connection);
         ?>
 
 
